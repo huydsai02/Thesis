@@ -1,0 +1,4 @@
+https://github.com/kpu/kenlm/archive/master.zip
+pyctcdecode
+jiwer
+transformers
