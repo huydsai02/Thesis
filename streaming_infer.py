@@ -9,16 +9,15 @@ from wav2vec2_model import Wav2Vec2SmallNonStreamingForCTC
 # from w2v_customized_nvlb import Wav2Vec2ForCTC
 from transformers import Wav2Vec2Processor, Wav2Vec2FeatureExtractor
 import kenlm
-from pyctcdecode import build_ctcdecoder
 import librosa
 import pandas as pd
 from jiwer import wer
 from sklearn.metrics import classification_report
 from tqdm import tqdm
 import torchaudio
-from pyctcdecode import Alphabet
-from pyctcdecode.decoder import BeamSearchDecoderCTC
-from pyctcdecode.language_model import LanguageModel
+from alphabet import Alphabet
+from decoder import BeamSearchDecoderCTC
+from language_model import LanguageModel
 from scipy.io import wavfile
 import librosa, time
 import argparse

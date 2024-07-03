@@ -11,9 +11,9 @@ import pandas as pd
 from jiwer import wer
 import numpy as np
 from tqdm import tqdm
-from pyctcdecode import Alphabet
-from pyctcdecode.decoder import BeamSearchDecoderCTC
-from pyctcdecode.language_model import LanguageModel
+from alphabet import Alphabet
+from decoder import BeamSearchDecoderCTC
+from language_model import LanguageModel
 import kenlm, os, time, argparse
 from safetensors import safe_open
 
